@@ -1,4 +1,4 @@
-FROM bigg01/centos7-java8
+FROM docker-java8:latest
 
 MAINTAINER Oliver Guggenbuehl
 
