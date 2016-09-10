@@ -15,7 +15,7 @@ EXPOSE 9000
 
 RUN set -x \
 
-    && cd /opt && yum install curl \ 
+    && cd /opt && yum install curl unzip -y \ 
     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip \
     && unzip sonarqube.zip \
     && mv sonarqube-$SONAR_VERSION sonarqube \
